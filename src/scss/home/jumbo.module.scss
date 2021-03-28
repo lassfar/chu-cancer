@@ -1,12 +1,15 @@
-@import '../variables';
+@import '../_variables.module.scss';
 
 .jumbo {
   @include flexProps(row, nowrap, initial, center);
+  padding: 2rem 6rem;
   min-height: 70vh;
 }
+// LEFT SECTION
 .jumbo__leftSection {
   padding-right: 1rem;
   width: 50%;
+  z-index: 1;
 }
 .jumbo__mainTitle {
   font-size: 3.5rem;
@@ -18,28 +21,78 @@
   font-weight: 300;
 }
 .jumbo__btn { font-size: 1rem; }
-// 
+
+// RIGHT SECTION
 .jumbo__rightSection {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   width: 50%;
+  z-index: 0;
 }
 .jumbo__rightImg {
   @include objectFit(contain);
-  width: 35rem;
+  min-width: 80%;
 }
+
 
 /* SMALL */
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-
+  .jumbo {
+    @include flexProps(column-reverse, nowrap, center, initial);
+    padding: 2rem;
+    min-height: 50vh;
+  }
+  // LEFT SECTION
+  .jumbo__mainTitle {
+    font-size: 2rem;
+  }
+  .jumbo__leftSection, .jumbo__rightSection {
+    padding: 0;
+    width: 100%;
+  }
+  // RIGHT SECTOION
+  .jumbo__rightImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    max-width: 100%;
+  }
 }
 /* MEDIUM */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-  
+  .jumbo {
+    @include flexProps(column-reverse, nowrap, center, initial);
+    padding: 2.5rem;
+    min-height: 50vh;
+  }
+  // LEFT SECTION
+  .jumbo__mainTitle {
+    font-size: 3rem;
+  }
+  .jumbo__leftSection, .jumbo__rightSection {
+    padding: 0;
+    width: 100%;
+  }
+  // RIGHT SECTOION
+  .jumbo__rightImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .1;
+    max-width: 100%;
+  }
 }
 /* LARGE */
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-  
+  .jumbo {
+    padding: 4rem;
+  }
+  // LEFT SECTION
+  .jumbo__mainTitle {
+    font-size: 3rem;
+  }
 }
 /* X-LARGE */
 @media only screen and (max-width: 1200px) and (min-width: 1025px) {

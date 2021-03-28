@@ -1,0 +1,51 @@
+@import '../_variables.module.scss';
+// [ DEVIDER
+.section__devider {
+  @extend .d_flex;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 0 0 2rem;
+  .section__deviderLine {
+    width: 10%; height: .4rem;
+    border: 0;
+  }
+}
+// END DEVIDER ]
+
+.sectionLayout {
+  padding: 0 6rem 2rem 6rem;
+  z-index: 1;
+}
+.sectionLayout__title {
+  margin: 4rem 0 4rem;
+  font-size: 3rem; 
+  text-transform: uppercase;
+  color: $prwkle;
+  text-align: center;
+}
+
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .sectionLayout {
+    padding: 0 2rem 2rem 3rem;
+  }
+
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .sectionLayout {
+    padding: 0 2.5rem 2.5rem 4rem;
+  }
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .sectionLayout {
+    padding: 0 4rem 4rem 5rem;
+  }
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}

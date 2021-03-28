@@ -1,4 +1,4 @@
-@import '../variables';
+@import '../_variables.module.scss';
 
 .header {
   @include flexProps(row, nowrap, initial, center);
@@ -54,6 +54,7 @@
   }
   .header__linkList {
     @include flexProps(column, nowrap, center, center);
+    display: none;
     margin-left: 0;
   }
   .header__linkItem {

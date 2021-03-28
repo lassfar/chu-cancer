@@ -1,0 +1,26 @@
+@import '../_variables.module.scss';
+
+.speciality {
+  @include flexProps(row, wrap, center, center);
+}
+.speciality__card {
+  // flex: 1 1 50%;
+  // background-color: $white;
+  min-width: 10rem; min-height: 20rem;
+  padding: .5rem;
+}
+.speciality__cardHeader {
+  position: relative;
+  max-height: 15rem;
+  min-height: 15rem;
+  // border-left: .5rem solid $prwkle;
+  .speciality__cardImg {
+    @include objectFit(cover);
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+}
+.speciality__cardBody {
+  padding: 1rem;
+  h3 { margin-bottom: .5rem; }
+}
