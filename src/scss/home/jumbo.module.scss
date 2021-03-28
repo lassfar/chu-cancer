@@ -1,0 +1,47 @@
+@import '../variables';
+
+.jumbo {
+  @include flexProps(row, nowrap, initial, center);
+  min-height: 70vh;
+}
+.jumbo__leftSection {
+  padding-right: 1rem;
+  width: 50%;
+}
+.jumbo__mainTitle {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: $hotpink;
+}
+.jumbo__desc {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.jumbo__btn { font-size: 1rem; }
+// 
+.jumbo__rightSection {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+}
+.jumbo__rightImg {
+  @include objectFit(contain);
+  width: 35rem;
+}
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}

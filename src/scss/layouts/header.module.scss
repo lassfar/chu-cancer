@@ -1,0 +1,82 @@
+@import '../variables';
+
+.header {
+  @include flexProps(row, nowrap, initial, center);
+  padding: 0 6rem;
+  box-shadow: 0 -.2rem .5rem $greylight;
+}
+.header__logoContainer {
+
+}
+.header__logo {
+  @include maxHeightWidth(5rem, 5rem);
+  @include objectFit(contain);
+}
+.header__menuBtn {
+  @extend .def_btn;
+  display: none;
+}
+.header__linkList {
+  @include flexProps(row, nowrap, space-between, center);
+  margin-left: auto;
+}
+.header__linkItem {
+  @extend .def_link;
+  margin-left: 2rem;
+  padding: 2rem 0 1.8rem;
+  font-weight: 600;
+  color: $black;
+  border-bottom: .3rem solid $transp;
+  transition: .2s all ease-in-out;
+  &:active, &:hover {
+    color: $hotpink;
+    border-bottom: .3rem solid $hotpink;
+  }
+  &::before {
+    @extend .absolute;
+    @include heightWidth(100%, 100%);
+    border-bottom: .3rem solid $hotpink;
+  }
+}
+
+
+/* SMALL */
+@media only screen and (max-width: 768px) and (min-width: 320px) {
+  .header {
+    @include flexProps(column, nowrap, center, center);
+    padding: .5rem;
+    margin: 0;
+  }
+  .header__logoContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .header__linkList {
+    @include flexProps(column, nowrap, center, center);
+    margin-left: 0;
+  }
+  .header__linkItem {
+    margin: 0; padding: 1rem;
+  }
+  .header__menuBtn {
+    display: inline-flex;
+    vertical-align: middle;
+    margin-left: auto;
+    padding: 1rem;
+  }
+}
+// /* MEDIUM */
+// @media only screen and (max-width: 768px) and (min-width: 481px) {
+  
+// }
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}
+
+
