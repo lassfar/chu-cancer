@@ -14,6 +14,7 @@
 // END DEVIDER ]
 
 .sectionLayout {
+  position: relative;
   padding: 0 6rem 2rem 6rem;
   z-index: 1;
 }
@@ -23,6 +24,14 @@
   text-transform: uppercase;
   color: $prwkle;
   text-align: center;
+}
+.sectionLayout__subtitle {
+  margin: 3rem 0 3rem;
+  // font-size: 3rem; 
+  text-transform: uppercase;
+  color: $salmon;
+  text-align: center;
+  line-height: 1.5rem;
 }
 
 

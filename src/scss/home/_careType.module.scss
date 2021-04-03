@@ -1,0 +1,68 @@
+@import '../variables.module';
+@import '../home/speciality.module.scss';
+
+.careType {
+  position: relative;
+  @include flexProps(row, wrap, space-between, center);
+}
+
+.careType__imgBg {
+  position: absolute;
+  left: -10%;
+  width: 30%;
+  opacity: .5;
+  @include objectFit(cover);
+}
+
+.careType__card {
+  position: relative;
+  @include flexProps(column, nowrap, flex-start, center);
+  // background-color: $white;
+  min-width: 10rem; min-height: 20rem;
+  flex: 1 0 15%;
+  padding: 1rem; margin: 1rem .5rem;
+  border: .05rem solid $light2;
+  border-radius: .5rem;
+  @extend .bg_white_transp, .def_transition;
+  &:hover {
+    @extend .bg_white;
+    border-color: $transp;
+    box-shadow: 0 .3rem .5rem 0rem $light2;
+  }
+}
+.careType__cardHeader {
+  @include flexProps(row, nowrap, center, center);
+  position: relative;
+  padding: 1rem;
+  width: 10rem; height: 10rem;
+  .careType__cardImg {
+    position: absolute;
+    width: 7rem; height: 7rem;
+    @include objectFit(cover);
+    border-radius: 100%;
+  }
+} 
+.careType__cardBody {
+  @include flexProps(column, nowrap, center, center);
+  h3 { margin-bottom: .5rem; }
+  text-align: center;
+}
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .careType__imgBg {
+    width: 100%;
+  }
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}

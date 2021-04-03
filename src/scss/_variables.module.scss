@@ -3,7 +3,9 @@ $lemonade: #EBA4BD; // lemonade
 $hotpink: #F73879;
 $salmon: #F6928E;
 $light: #FEF9F9;
+$light2: #ececec;
 $white: #FFFFFF;
+$white_transp: #FFFFFF70;
 $black: #000000;
 $transp: #00000000;
 $greylight: #707070;
@@ -14,6 +16,7 @@ $greylight: #707070;
 .bg_salmon { background-color: $salmon; }
 .bg_light { background-color: $light; }
 .bg_white { background-color: $white; }
+.bg_white_transp { background-color: $white_transp; }
 .bg_black { background-color: $black; }
 .bg_transp { background-color: $transp; }
 .bg_greylight { background-color: $greylight; }
@@ -30,6 +33,7 @@ $greylight: #707070;
   background-color: $transp;
 }
 .pointer { cursor: pointer; }
+.def_transition { transition: .3s all ease-in-out; }
 
 // IMAGE
 @mixin objectFit($format) {
@@ -47,6 +51,8 @@ $greylight: #707070;
   justify-content: $justify;
   align-items: $align;
 }
+.align_items_center { @extend .d_flex; align-items: center !important; }
+.justify_content_center { @extend .d_flex; justify-content: center !important; }
 
 // WIDTH HEIGHT
 @mixin minHeightWidth($height, $width: auto) {

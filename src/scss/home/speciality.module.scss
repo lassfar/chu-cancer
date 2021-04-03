@@ -4,9 +4,9 @@
   @include flexProps(row, wrap, center, center);
 }
 .speciality__card {
-  // flex: 1 1 50%;
-  // background-color: $white;
-  min-width: 10rem; min-height: 20rem;
+  flex: 1 0 25%;
+  min-width: 15rem;
+  min-height: 22rem; max-height: 22rem;
   padding: .5rem;
 }
 .speciality__cardHeader {
