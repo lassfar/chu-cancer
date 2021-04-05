@@ -52,10 +52,8 @@ module.exports = {
         src: path.join(__dirname, 'src'),
         pages: path.join(__dirname, 'src/pages'),
         components: path.join(__dirname, 'src/components'),
-        chuPages: path.join(__dirname, 'src/pages/chu'),
         images: path.join(__dirname, 'src/images'),
         scss: path.join(__dirname, 'src/scss'),
-        Home: path.join(__dirname, 'src/components/home'),
       }
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
