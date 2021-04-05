@@ -1,9 +1,12 @@
 @import '../_variables.module.scss';
 
 .header {
+  position: relative;
   @include flexProps(row, nowrap, initial, center);
   padding: 0 6rem;
   box-shadow: 0 -.2rem .5rem $greylight;
+  // z-index: 2;
+  @extend .bg_white;
 }
 .header__logoContainer {
 

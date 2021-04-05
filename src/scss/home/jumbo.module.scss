@@ -3,7 +3,7 @@
 .jumbo {
   @include flexProps(row, nowrap, initial, center);
   padding: 2rem 6rem;
-  min-height: 70vh;
+  min-height: 80vh;
 }
 // LEFT SECTION
 .jumbo__leftSection {

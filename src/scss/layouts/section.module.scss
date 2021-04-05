@@ -2,7 +2,6 @@
 // [ DEVIDER
 .section__devider {
   @extend .d_flex;
-  justify-content: center;
   width: 100%;
   padding: 1rem 0;
   margin: 0 0 2rem;
@@ -10,12 +9,13 @@
     width: 10%; height: .4rem;
     border: 0;
   }
+  z-index: 1;
 }
 // END DEVIDER ]
 
 .sectionLayout {
   position: relative;
-  padding: 0 6rem 2rem 6rem;
+  padding: 0 6rem 4rem 6rem;
   z-index: 1;
 }
 .sectionLayout__title {
@@ -40,18 +40,26 @@
   .sectionLayout {
     padding: 0 2rem 2rem 3rem;
   }
-
+  .sectionLayout__title {
+    font-size: 2rem;
+  }
 }
 /* MEDIUM */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   .sectionLayout {
     padding: 0 2.5rem 2.5rem 4rem;
   }
+  .sectionLayout__title {
+    font-size: 3rem;
+  }
 }
 /* LARGE */
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   .sectionLayout {
     padding: 0 4rem 4rem 5rem;
+  }
+  .sectionLayout__title {
+    font-size: 4rem;
   }
 }
 /* X-LARGE */

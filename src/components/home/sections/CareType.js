@@ -11,7 +11,7 @@ const CareType = () => {
   const [subtitle] = useState("Offre de soins divérsifié et accompagnement complet");
 
   return (
-    <SectionLayout subtitle={subtitle} bgDevider={_var.bg_hotpink}>
+    <SectionLayout subtitle={subtitle} bg={_var.bg_light} bgDivider={_var.bg_hotpink}>
       <div className={_style.careType}>
 
         <img className={_style.careType__imgBg} src={careTypeBg} />
@@ -22,7 +22,7 @@ const CareType = () => {
               <img className={_style.careType__cardImg} src={item.imgUrl} alt={item.desc.substring(0, 50)} />
             </div>
             <div className={_style.careType__cardBody}>
-              <h3>{item.title}</h3>
+              <h1 className={_style.careType__cardTitle}>{item.title}</h1>
               <p>{item.desc}</p>
             </div>
           </div>

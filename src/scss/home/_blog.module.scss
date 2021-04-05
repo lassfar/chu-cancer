@@ -1,0 +1,73 @@
+@import '../variables.module';
+
+.blog {
+  position: relative;
+  @include flexProps(row, wrap, space-between, center);
+}
+
+.blog__card {
+  position: relative;
+  flex: 1 0 20%;
+  min-width: 15rem;
+  min-height: 22rem; max-height: fit-content;
+  margin: .5rem;
+  @extend .bg_light2;
+  box-shadow: 0 .1rem .1rem .1rem $light3;
+}
+.blog__cardHeader {
+  position: relative;
+  max-height: 10rem;
+  min-height: 10rem;
+  // border-left: .5rem solid $prwkle;
+  .blog__cardImg {
+    @include objectFit(cover);
+    position: absolute;
+    width: 100%; height: 100%;
+  }
+}
+.blog__cardBody {
+  padding: 1rem;
+  .blog__cardTitle { margin-bottom: 1rem; }
+}
+.blog__cardFooter {
+  padding: 1rem;
+  display: flex;
+  .blog__cardBtn {
+    margin-left: auto;
+  }
+}
+
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .blog {
+    justify-content: center;
+  }
+  .blog__card {
+    flex: 1 1 50%;
+  }
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .blog {
+    justify-content: center;
+  }
+  .blog__card {
+    flex: 1 1 50%;
+  }
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .blog {
+    justify-content: center;
+  }
+  .blog__card {
+    flex: 1 1 33%;
+  }
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  .blog {
+    justify-content: center;
+  }
+}

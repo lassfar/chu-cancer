@@ -12,21 +12,6 @@ button {
   @extend .def_btn;
 }
 
-.primary_btn {
-  background-color: $hotpink;
-  color: $white;
-  padding: .5rem 1rem;
-  border-radius: 5rem;
-  font-weight: 500;
-  border: .1rem solid $transp;
-  transition: .3s all ease-in-out;
-  @extend .pointer;
-  &:hover {
-    background-color: $white;
-    color: $hotpink;
-    border: .1rem solid $hotpink;
-  }
-}
 
 
 // /* SMALL */

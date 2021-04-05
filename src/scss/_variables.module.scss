@@ -1,9 +1,11 @@
 $prwkle: #B9B2D9; // periwinkle
 $lemonade: #EBA4BD; // lemonade
+$lemonade_transp: #eba4bd3a; // lemonade
 $hotpink: #F73879;
 $salmon: #F6928E;
 $light: #FEF9F9;
-$light2: #ececec;
+$light2: #fafafa;
+$light3: #ececec;
 $white: #FFFFFF;
 $white_transp: #FFFFFF70;
 $black: #000000;
@@ -12,14 +14,31 @@ $greylight: #707070;
 
 .bg_prwkle { background-color: $prwkle; }
 .bg_lemonade { background-color: $lemonade; }
+.bg_lemonade_transp { background-color: $lemonade_transp; }
 .bg_hotpink { background-color: $hotpink; }
 .bg_salmon { background-color: $salmon; }
 .bg_light { background-color: $light; }
+.bg_light2 { background-color: $light2; }
+.bg_light3 { background-color: $light3; }
 .bg_white { background-color: $white; }
 .bg_white_transp { background-color: $white_transp; }
 .bg_black { background-color: $black; }
 .bg_transp { background-color: $transp; }
 .bg_greylight { background-color: $greylight; }
+
+.text_prwkle { color: $prwkle; }
+.text_lemonade { color: $lemonade; }
+.text_lemonade_transp { color: $lemonade_transp; }
+.text_hotpink { color: $hotpink; }
+.text_salmon { color: $salmon; }
+.text_light { color: $light; }
+.text_light2 { color: $light2; }
+.text_light3 { color: $light3; }
+.text_white { color: $white; }
+.text_white_transp { color: $white_transp; }
+.text_black { color: $black; }
+.text_transp { color: $transp; }
+.text_greylight { color: $greylight; }
 
 .absolute { position: absolute; }
 .d_block { display: block; }
@@ -39,6 +58,26 @@ $greylight: #707070;
 @mixin objectFit($format) {
   object-fit: $format;
 }
+// BTN
+@mixin defaultBtn($color1, $color2, $radius: 0rem) {
+  background-color: $color1;
+  color: $color2;
+  padding: .5rem 1rem;
+  border-radius: $radius;
+  font-weight: 500;
+  border: .1rem solid $transp;
+  text-decoration: none;
+  transition: .3s all ease-in-out;
+  @extend .pointer;
+  &:hover {
+    background-color: $color2;
+    color: $color1;
+    border: .1rem solid $color1;
+  }
+}
+
+.align_items_center { @extend .d_flex; align-items: center !important; }
+.justify_content_center { @extend .d_flex; justify-content: center !important; }
 
 // FLEX
 @mixin flexFlow($direct, $wrapping) {
@@ -51,8 +90,21 @@ $greylight: #707070;
   justify-content: $justify;
   align-items: $align;
 }
-.align_items_center { @extend .d_flex; align-items: center !important; }
-.justify_content_center { @extend .d_flex; justify-content: center !important; }
+.primary_btn {
+  @include defaultBtn($hotpink, $white, 5rem);
+}
+.salmon_btn {
+  @include defaultBtn($salmon, $white, 5rem);
+}
+.prwkle_btn {
+  @include defaultBtn($prwkle, $white, 5rem);
+}
+.lemonade_btn {
+  @include defaultBtn($lemonade, $white, 5rem);
+}
+.black_btn {
+  @include defaultBtn($black, $white, 5rem);
+}
 
 // WIDTH HEIGHT
 @mixin minHeightWidth($height, $width: auto) {

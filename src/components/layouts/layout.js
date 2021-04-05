@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "components/layouts/header.js"
 import Footer from "components/layouts/footer.js"
+import Copyright from 'components/layouts/Copyright.js';
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -30,6 +31,7 @@ const Layout = ({ children }) => {
         { children }
       </main>
       <Footer />
+      <Copyright />
     </>
   )
 }
