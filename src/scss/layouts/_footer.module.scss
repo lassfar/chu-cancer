@@ -11,7 +11,9 @@
 .footer__infos {
   width: 100%; 
 }
-
+.footer__title {
+  
+}
 .footer__links {
   @include flexProps(row, nowrap, initial, initial);
   width: 70%;
