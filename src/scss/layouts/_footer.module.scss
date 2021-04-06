@@ -4,9 +4,9 @@
   position: relative;
   @include flexProps(row, wrap, space-between, center);
   padding: 5rem 6rem 2rem 6rem;
-  @extend .bg_salmon;
+  @extend .bg_black;
   color: $white;
-}footer__links
+}
 
 .footer__infos {
   width: 100%; 
@@ -35,12 +35,20 @@
   padding: .5rem;
   color: $white;
   text-decoration: none;
+  @extend .d_flex;
+  align-items: center;
+}
+.footer__linkItemIcon {
+  
+}
+.footer__linkItemText {
+  margin-left: .5rem;
 }
 
 // COPITIGHT
 .footer__copyright {
   padding: 1rem 2rem;
-  @extend .d_flex, .bg_black;
+  @extend .d_flex, .bg_hotpink;
   @extend .text_white;
   justify-content: center;
   text-align: center;

@@ -4,6 +4,7 @@
   @include flexProps(row, nowrap, initial, center);
   padding: 2rem 6rem;
   min-height: 80vh;
+  @extend .bg_light
 }
 // LEFT SECTION
 .jumbo__leftSection {

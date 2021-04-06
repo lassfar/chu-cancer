@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SectionLayout from 'components/layouts/sections/sectionLayout'
+import SectionLayout from 'components/layouts/sections/section-layout'
 import * as _var from 'scss/_variables.module.scss'
 import * as _style from 'scss/home/_careType.module.scss'
 import { careTypeList } from 'components/_data'

@@ -1,3 +1,8 @@
+
+import * as aiIcon from 'react-icons/ai'
+import * as hiIcon from 'react-icons/hi'
+
+
 export const specialityList = [
   {
     title: 'Chirurgie Gynecologique',
@@ -80,5 +85,25 @@ export const blogList = [
     desc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
     link: '#',
     imgUrl: 'https://image.freepik.com/photos-gratuite/gros-plan-du-medecin-montrant-ruban-rose-symbolisant-cancer-du-sein_118454-13217.jpg'
+  },
+];
+
+export const footerLinkList = [
+  {
+    title: "Plan du site",
+    links: [
+      { to: "#", icon: aiIcon.AiOutlineLink, text: "Actualités" },
+      { to: "#", icon: aiIcon.AiOutlineLink, text: "Nos spécialités" },
+      { to: "#", icon: aiIcon.AiOutlineLink, text: "Qui somme-nous" },
+      { to: "#", icon: aiIcon.AiOutlineLink, text: "Contacts" },
+    ]
+  },
+  {
+    title: "Contact Infos",
+    links: [
+      { to: "#", icon: aiIcon.AiOutlinePhone, text: "06 66 00 00 00" },
+      { to: "#", icon: hiIcon.HiOutlineLocationMarker, text: "Centre Hospitalier Universitaire Mohammed VI Route de Casa Km 17 BP 398 Casablanca, Maroc" },
+      { to: "#", icon: hiIcon.HiOutlineMail, text: "contact@email.com" }
+    ]
   },
 ];

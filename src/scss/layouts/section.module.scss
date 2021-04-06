@@ -1,11 +1,11 @@
 @import '../_variables.module.scss';
 // [ DEVIDER
-.section__devider {
+.section__divider {
   @extend .d_flex;
   width: 100%;
   padding: 1rem 0;
   margin: 0 0 2rem;
-  .section__deviderLine {
+  .section__dividerLine {
     width: 10%; height: .4rem;
     border: 0;
   }
@@ -57,9 +57,6 @@
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
   .sectionLayout {
     padding: 0 4rem 4rem 5rem;
-  }
-  .sectionLayout__title {
-    font-size: 4rem;
   }
 }
 /* X-LARGE */
