@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 import Divider from 'components/ui/divider'
-import DynamicIcon from 'components/ui/dynamic-icon.js'
+import DynamicIcon from 'components/ui/dynamic-icon'
 import * as _style from 'scss/layouts/_footer.module.scss'
-import { footerLinkList } from 'components/_data.js'
+import { footerLinkList } from 'components/_data'
 
 const Footer = () => {
   const [footerLinks] = useState(footerLinkList)

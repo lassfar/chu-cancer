@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import SectionLayout from 'components/layouts/sections/section-layout'
 import * as _var from 'scss/_variables.module.scss'
 import * as _style from 'scss/home/_blog.module.scss'
-import { blogList } from 'components/_data.js'
+import { blogList } from 'components/_data'
 import { Link } from 'gatsby'
 
 const Blog = () => {

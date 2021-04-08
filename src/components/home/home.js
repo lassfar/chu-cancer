@@ -1,10 +1,10 @@
 import React from 'react'
 import * as _style from 'scss/home/home.module.scss'
-import Jumbo from 'components/home/sections/jumbo.js'
-import Speciality from 'components/home/sections/speciality.js'
-import CareType from 'components/home/sections/care-type.js'
-import Partners from 'components/home/sections/partners.js'
-import Blog from 'components/home/sections/blog.js'
+import Jumbo from 'components/home/sections/jumbo'
+import Speciality from 'components/home/sections/speciality'
+import CareType from 'components/home/sections/care-type'
+import Partners from 'components/home/sections/partners'
+import Blog from 'components/home/sections/blog'
 
 const Home = () => {
   return (
