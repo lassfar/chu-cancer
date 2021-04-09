@@ -38,7 +38,7 @@
 /* SMALL */
 @media only screen and (max-width: 480px) and (min-width: 320px) {
   .sectionLayout {
-    padding: 0 2rem 2rem 3rem;
+    padding: 0 2rem 3rem 2rem;
   }
   .sectionLayout__title {
     font-size: 2rem;
@@ -47,7 +47,7 @@
 /* MEDIUM */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
   .sectionLayout {
-    padding: 0 2.5rem 2.5rem 4rem;
+    padding: 0 2.5rem 4rem 2.5rem;
   }
   .sectionLayout__title {
     font-size: 3rem;

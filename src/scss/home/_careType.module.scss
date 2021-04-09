@@ -56,17 +56,31 @@
   .careType__imgBg {
     width: 100%;
   }
-  .careType__card { margin: 1rem 0; }
+  .careType__card {
+    margin: 1rem 0;
+    flex: 1 0 100%;
+  }
 }
 /* MEDIUM */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
-
+  .careType__card {
+    margin: 1rem .5rem;
+    flex: 1 0 40%;
+  }
 }
 /* LARGE */
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
-
+  .careType__card {
+    margin: 1rem .5rem;
+    flex: 1 0 30%;
+    min-width: 12rem;
+  }
 }
 /* X-LARGE */
 @media only screen and (max-width: 1200px) and (min-width: 1025px) {
-  
+  .careType__card {
+    margin: 1rem .5rem;
+    flex: 1 0 30%;
+    min-width: 15rem;
+  }
 }
