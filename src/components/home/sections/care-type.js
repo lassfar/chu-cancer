@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
-import SectionLayout from 'components/layouts/sections/section-layout'
 import * as _var from 'scss/_variables.module.scss'
 import * as _style from 'scss/home/_careType.module.scss'
+import * as riIcon from 'react-icons/ri'
+import SectionLayout from 'components/layouts/section-layout'
+import { DynamicIcon } from 'components/ui/dynamic-icon'
 import { careTypeList } from 'components/_data'
 import careTypeBg from 'images/cancer/5-cancer.png'
 
@@ -19,7 +21,10 @@ const CareType = () => {
         {careTypes.map((item, idx) => (
           <div className={_style.careType__card} key={idx}>
             <div className={_style.careType__cardHeader}>
-              <img className={_style.careType__cardImg} src={item.imgUrl} alt={item.desc.substring(0, 50)} />
+              <div className={_style.careType__cardIconContainer}>
+                <riIcon.RiMentalHealthFill className={_style.careType__cardIcon}>
+                </riIcon.RiMentalHealthFill>
+              </div>
             </div>
             <div className={_style.careType__cardBody}>
               <h1 className={_style.careType__cardTitle}>{item.title}</h1>

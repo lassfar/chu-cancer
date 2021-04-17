@@ -20,13 +20,13 @@
   padding: 1rem; margin: 1rem .5rem;
   min-width: 10rem; min-height: 20rem;
   flex: 1 0 15%;
-  border: .1rem solid $light3;
-  border-radius: .5rem;
-  @extend .bg_white_transp, .def_transition;
+  border-bottom: .4rem solid $lemonade;
+  // border-radius: .5rem;
+  @extend .bg_white, .def_transition;
+  backdrop-filter: blur(3px);
   &:hover {
-    @extend .bg_white;
-    border-color: $transp;
-    box-shadow: 0 .3rem .5rem 0rem $light2;
+    backdrop-filter: none;
+    @extend .bg_white_transp;
   }
 }
 .careType__cardHeader {
@@ -34,13 +34,19 @@
   position: relative;
   padding: 1rem;
   width: 10rem; height: 10rem;
-  .careType__cardImg {
-    position: absolute;
-    width: 7rem; height: 7rem;
-    @include objectFit(cover);
-    border-radius: 100%;
-  }
-} 
+}
+.careType__cardIconContainer {
+  @include flexProps(row, nowrap, center, center);
+  width: 7rem; height: 7rem;
+  @include objectFit(cover);
+  border-radius: 100%;
+  @extend .bg_lemonade;
+}
+.careType__cardIcon {
+  width: 5rem; height: 5rem;
+  @extend .text_white;
+}
+
 .careType__cardBody {
   @include flexProps(column, nowrap, center, center);
   text-align: center;

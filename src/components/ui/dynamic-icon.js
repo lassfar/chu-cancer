@@ -7,7 +7,7 @@ const DynamicIcon = ({iconName, iconSize}) => {
         width: iconSize || "1.5rem",
         height: iconSize || "1.5rem",
         minHeight:  iconSize || "1.5rem",
-        maxHeight:  iconSize || "1rem"
+        maxHeight:  iconSize || "1.5rem"
       }
     })
   )

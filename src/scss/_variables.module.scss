@@ -26,19 +26,19 @@ $greylight: #707070;
 .bg_transp { background-color: $transp; }
 .bg_greylight { background-color: $greylight; }
 
-.text_prwkle { color: $prwkle; }
-.text_lemonade { color: $lemonade; }
-.text_lemonade_transp { color: $lemonade_transp; }
-.text_hotpink { color: $hotpink; }
-.text_salmon { color: $salmon; }
-.text_light { color: $light; }
-.text_light2 { color: $light2; }
-.text_light3 { color: $light3; }
-.text_white { color: $white; }
-.text_white_transp { color: $white_transp; }
-.text_black { color: $black; }
-.text_transp { color: $transp; }
-.text_greylight { color: $greylight; }
+.text_prwkle { color: $prwkle !important; }
+.text_lemonade { color: $lemonade !important; }
+.text_lemonade_transp { color: $lemonade_transp !important; }
+.text_hotpink { color: $hotpink !important; }
+.text_salmon { color: $salmon !important; }
+.text_light { color: $light !important; }
+.text_light2 { color: $light2 !important; }
+.text_light3 { color: $light3 !important; }
+.text_white { color: $white !important; }
+.text_white_transp { color: $white_transp !important; }
+.text_black { color: $black !important; }
+.text_transp { color: $transp !important; }
+.text_greylight { color: $greylight !important; }
 
 .absolute { position: absolute; }
 .d_block { display: block; }

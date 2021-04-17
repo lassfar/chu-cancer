@@ -3,17 +3,18 @@
 .jumbo {
   @include flexProps(row, nowrap, initial, center);
   padding: 2rem 6rem;
+  min-height: fit-content;
   min-height: 80vh;
-  @extend .bg_white;
+  @extend .bg_light;
 }
 // LEFT SECTION
 .jumbo__leftSection {
   padding-right: 1rem;
-  width: 50%;
+  width: 60%;
   z-index: 1;
 }
 .jumbo__mainTitle {
-  font-size: 3.5rem;
+  font-size: 4rem;
   margin-bottom: 1rem;
   color: $hotpink;
 }
@@ -28,12 +29,12 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  width: 50%;
+  width: 40%;
   z-index: 0;
 }
 .jumbo__rightImg {
   @include objectFit(contain);
-  min-width: 80%;
+  min-width: 70%;
 }
 
 

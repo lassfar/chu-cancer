@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import SectionLayout from 'components/layouts/sections/section-layout'
+import SectionLayout from 'components/layouts/section-layout'
 import * as _var from 'scss/_variables.module.scss'
 import * as _style from 'scss/home/_partner.module.scss'
 import { partnerList } from 'components/_data'
@@ -8,7 +8,7 @@ const Partners = () => {
   const [partners] = useState(partnerList);
 
   return (
-    <SectionLayout title="Nos Partenaires" bg={_var.bg_white} bgDivider={_var.bg_prwkle}>
+    <SectionLayout title="Nos Partenaires" bg={_var.bg_lemonade} colorTitle="text_white" bgDivider={_var.bg_white}>
 
       <div className={_style.partner}>
         {partners.map((item, idx) => (
