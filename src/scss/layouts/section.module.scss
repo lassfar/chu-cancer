@@ -23,6 +23,7 @@
   font-size: 3rem; 
   text-transform: uppercase;
   color: $prwkle;
+  text-align: center;
 }
 .sectionLayout__subtitle {
   margin: 3rem 0 3rem;
@@ -58,7 +59,7 @@
   }
   .sectionLayout__title {
     font-size: 3rem;
-    text-align: center;
+    // text-align: center;
   }
 }
 /* LARGE */
@@ -70,7 +71,7 @@
     padding: 0 4rem 4rem 5rem;
   }
   .sectionLayout__title {
-    text-align: center;
+    // text-align: center;
   }
 }
 /* X-LARGE */

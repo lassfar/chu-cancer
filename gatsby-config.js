@@ -4,7 +4,7 @@ const path = require('path')
 module.exports = {
   siteMetadata: {
     title: `CHU CANCER`,
-    description: `Centre Mohammed VI Pour le traitement de cancer`,
+    description: `Centre Mohammed VI Pour le traitement des cancers`,
     keywords: 'traitement du cancer casablanca, CHU Ibn Rochd',
     author: `@aymanelassfar`,
   },

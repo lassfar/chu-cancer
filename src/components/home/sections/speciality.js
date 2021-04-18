@@ -9,7 +9,7 @@ const Speciality = () => {
   const [specialities] = useState(specialityList)
 
   return (
-    <SectionLayout title="Nos Spécialités" bg={_var.bg_white} bgDivider={_var.bg_hotpink}>
+    <SectionLayout title="Nos Spécialités" bg={_var.bg_white} colorTitle="text_lemonade" bgDivider={_var.bg_lemonade}>
       <div className={_style.speciality}>
         {specialities.map((item, idx) => (
           <div className={_style.speciality__card} key={idx}>

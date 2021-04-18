@@ -5,18 +5,20 @@
   padding: 2rem 6rem;
   min-height: fit-content;
   min-height: 80vh;
-  @extend .bg_light;
+  @extend .bg_white, .text_white;
+  filter: hue-rotate(330deg);
 }
 // LEFT SECTION
 .jumbo__leftSection {
   padding-right: 1rem;
-  width: 60%;
+  width: 100%;
   z-index: 1;
+  text-align: center;
 }
 .jumbo__mainTitle {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: $hotpink;
+  // color: $prwkle;
 }
 .jumbo__desc {
   margin-bottom: 1rem;
@@ -24,19 +26,10 @@
 }
 .jumbo__btn { font-size: 1rem; }
 
-// RIGHT SECTION
-.jumbo__rightSection {
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  width: 40%;
-  z-index: 0;
-}
 .jumbo__rightImg {
   @include objectFit(contain);
   min-width: 70%;
 }
-
 
 /* SMALL */
 @media only screen and (max-width: 480px) and (min-width: 320px) {
@@ -49,8 +42,7 @@
   .jumbo__mainTitle {
     font-size: 2rem;
   }
-  .jumbo__leftSection, .jumbo__rightSection {
-    padding: 0;
+  .jumbo__leftSection {
     width: 100%;
   }
   // RIGHT SECTOION
@@ -73,8 +65,7 @@
   .jumbo__mainTitle {
     font-size: 3rem;
   }
-  .jumbo__leftSection, .jumbo__rightSection {
-    padding: 0;
+  .jumbo__leftSection {
     width: 100%;
   }
   // RIGHT SECTOION
@@ -95,8 +86,13 @@
   .jumbo__mainTitle {
     font-size: 3rem;
   }
+  .jumbo__leftSection {
+    width: 100%;
+  }
 }
 /* X-LARGE */
 @media only screen and (max-width: 1200px) and (min-width: 1025px) {
-  
+  .jumbo__leftSection {
+    width: 100%;
+  }
 }

@@ -9,6 +9,7 @@ $light3: #ececec;
 $white: #FFFFFF;
 $white_transp: #FFFFFF70;
 $black: #000000;
+$black_transp: #00000073;
 $transp: #00000000;
 $greylight: #707070;
 
@@ -23,6 +24,7 @@ $greylight: #707070;
 .bg_white { background-color: $white; }
 .bg_white_transp { background-color: $white_transp; }
 .bg_black { background-color: $black; }
+.bg_black_transp { background-color: $black; }
 .bg_transp { background-color: $transp; }
 .bg_greylight { background-color: $greylight; }
 
@@ -70,7 +72,7 @@ $greylight: #707070;
   transition: .3s all ease-in-out;
   @extend .pointer;
   &:hover {
-    background-color: $color2;
+    background-color: $transp;
     color: $color1;
     border: .1rem solid $color1;
   }
@@ -104,6 +106,9 @@ $greylight: #707070;
 }
 .black_btn {
   @include defaultBtn($black, $white, 5rem);
+}
+.white_btn {
+  @include defaultBtn($white, $black, 5rem);
 }
 
 // WIDTH HEIGHT

@@ -5,7 +5,6 @@ import * as riIcon from 'react-icons/ri'
 import SectionLayout from 'components/layouts/section-layout'
 import { DynamicIcon } from 'components/ui/dynamic-icon'
 import { careTypeList } from 'components/_data'
-import careTypeBg from 'images/cancer/5-cancer.png'
 
 const CareType = () => {
 
@@ -16,7 +15,7 @@ const CareType = () => {
     <SectionLayout subtitle={subtitle} bg={_var.bg_light} bgDivider={_var.bg_hotpink}>
       <div className={_style.careType}>
 
-        <img className={_style.careType__imgBg} src={careTypeBg} />
+        <img className={_style.careType__imgBg} src={'image/cancer/5-cancer.png'} />
 
         {careTypes.map((item, idx) => (
           <div className={_style.careType__card} key={idx}>
