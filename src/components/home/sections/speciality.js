@@ -19,7 +19,7 @@ const Speciality = () => {
             <div className={_style.speciality__cardBody}>
               <div className={_style.speciality__cardTexts}>
                 <p className={_style.speciality__cardBodyTitle}>{item.title}</p>
-                <p>{item.desc}</p>
+                <p>{item.desc.substring(0, 50)+'...'}</p>
               </div>
             </div>
           </div>

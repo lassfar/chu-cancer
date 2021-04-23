@@ -3,14 +3,12 @@
 .jumbo {
   @include flexProps(row, nowrap, initial, center);
   padding: 2rem 6rem;
-  min-height: fit-content;
   min-height: 80vh;
   @extend .bg_white, .text_white;
   filter: hue-rotate(330deg);
 }
 // LEFT SECTION
 .jumbo__leftSection {
-  padding-right: 1rem;
   width: 100%;
   z-index: 1;
   text-align: center;
@@ -36,7 +34,7 @@
   .jumbo {
     @include flexProps(column-reverse, nowrap, center, initial);
     padding: 2rem;
-    min-height: 50vh;
+    min-height: 90vh;
   }
   // LEFT SECTION
   .jumbo__mainTitle {
@@ -59,7 +57,7 @@
   .jumbo {
     @include flexProps(column-reverse, nowrap, center, initial);
     padding: 2.5rem;
-    min-height: 50vh;
+    min-height: 90vh;
   }
   // LEFT SECTION
   .jumbo__mainTitle {

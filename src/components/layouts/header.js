@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
 
   const [links, setLinks] = useState([
     { link: '/', text: 'Accueil' },
-    { link: '/speciality', text: 'Nos Spécialités' },
+    { link: '/our-specialities', text: 'Nos Spécialités' },
     { link: '/who-we-are', text: 'Qui somme-nous' },
     { link: '/contact', text: 'Contact' },
     { link: '/news', text: 'Actualités' },

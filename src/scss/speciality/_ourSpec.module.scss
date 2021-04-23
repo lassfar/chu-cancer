@@ -1,0 +1,63 @@
+@import '../variables.module';
+
+.ourSpec {
+  position: relative;
+}
+.ourSpec__container {
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+}
+.ourSpec__odd, .ourSpec__even {
+  position: relative;
+  padding: 4rem;
+  min-height: 35rem;
+  z-index: 2;
+}
+.ourSpec__even { 
+  width: 45%;
+  @include flexProps(column, nowrap, center, initial)
+}
+.ourSpec__odd { width: 55%; }
+.ourSpec__ImgSection {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  @extend .bg_salmon;
+  z-index: 1;
+}
+.ourSpec__Img {
+  position: absolute;
+  width: 100%; height: 100%;
+  @include objectFit(cover);
+}
+
+
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .ourSpec__odd, .ourSpec__even {
+    width: 100%;
+    height: fit-content;
+  }
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .ourSpec__odd, .ourSpec__even {
+    width: 100%;
+    height: fit-content;
+  }
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .ourSpec__odd, .ourSpec__even {
+    width: 100%;
+    height: fit-content;
+  }
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}

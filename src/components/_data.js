@@ -6,22 +6,50 @@ import * as hiIcon from 'react-icons/hi'
 export const specialityList = [
   {
     title: 'Chirurgie Gynecologique',
-    desc: 'lorem ipsum dolor lorem ipsum dolor',
+    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but
+    also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets containing Lorem Ipsum passages, and more recently with desktop
+    publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     imgUrl: 'image/common/8.jpg'
   },
   {
     title: 'Chirurgie Oncologie',
-    desc: 'lorem ipsum dolor lorem ipsum dolor',
+    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but
+    also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets containing Lorem Ipsum passages, and more recently with desktop
+    publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     imgUrl: 'image/common/9.jpg'
   },
   {
     title: 'Chirurgie Gynecologique',
-    desc: 'lorem ipsum dolor lorem ipsum dolor',
+    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but
+    also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets containing Lorem Ipsum passages, and more recently with desktop
+    publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     imgUrl: 'https://image.freepik.com/photos-gratuite/gros-plan-du-medecin-montrant-ruban-rose-symbolisant-cancer-du-sein_118454-13217.jpg'
   },
   {
     title: 'Chirurgie Oncologie',
-    desc: 'lorem ipsum dolor lorem ipsum dolor',
+    desc: `Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard dummy text ever since the
+    1500s, when an unknown printer took a galley of type and scrambled it to
+    make a type specimen book. It has survived not only five centuries, but
+    also the leap into electronic typesetting, remaining essentially
+    unchanged. It was popularised in the 1960s with the release of Letraset
+    sheets containing Lorem Ipsum passages, and more recently with desktop
+    publishing software like Aldus PageMaker including versions of Lorem Ipsum.`,
     imgUrl: 'image/common/7.jpg'
   },
 ];
