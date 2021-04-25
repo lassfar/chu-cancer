@@ -6,44 +6,49 @@ import * as _style from "scss/layouts/header.module.scss"
 import * as giIcon from 'react-icons/gi'
 
 const Header = ({ siteTitle }) => {
-  const [isMenuHidden, setIsMenuHidden] = useState(false)
+  const [isMenuHidden, setIsMenuHidden] = useState(null)
+  const [screenWidth, setScreenWidth] = useState(null)
 
   useEffect(() => {
     if (typeof window !== `undefined`) {
       if (window.innerWidth < 768) {
         setIsMenuHidden(true);
         let menu = document.querySelector('#menu');
-        menu.classList.toggle('d_none');
+        menu.classList.add('d_none');
+      } else {
+        setIsMenuHidden(false);
       }
+      setScreenWidth(window.innerWidth);
     }
   }, [])
 
-  const [links, setLinks] = useState([
+  const [links] = useState([
     { link: '/', text: 'Accueil' },
-    { link: '/our-specialities', text: 'Nos Spécialités' },
     { link: '/who-we-are', text: 'Qui somme-nous' },
-    { link: '/contact', text: 'Contact' },
+    { link: '/our-specialities', text: 'Nos Spécialités' },
     { link: '/news', text: 'Actualités' },
+    { link: '/contacts', text: 'Contact' },
   ]);
   
   const toggleMenu = () => {
-    let menu = document.querySelector('#menu');
-    menu.classList.toggle('d_flex');
-    menu.classList.toggle('d_none');
+    if (screenWidth < 768) {
+      let menu = document.querySelector('#menu');
+      menu.classList.toggle('d_none');
+    }
   }
 
   return (
     <header>
       <div className={_style.header}>
         <div className={_style.header__logoContainer}>
-          <img className={_style.header__logo} src="image/cancer/1.png" alt="chu cancer logo" />
-          <button className={_style.header__menuBtn} onClick={() => toggleMenu()}>
+          <img className={_style.header__logo} src="image/LogoFadwa.png" alt="chu cancer logo" />
+          <button className={`${_style.header__menuBtn} ${!isMenuHidden && 'd_none'}`} onClick={() => toggleMenu()}>
             <giIcon.GiHamburgerMenu></giIcon.GiHamburgerMenu>
           </button>
         </div>
-        <div className={_style.header__linkList} id="menu">
+        <div className={`${_style.header__linkList} ${isMenuHidden === true && 'd_none'}`} id="menu">
           {links.map((link, idx) => (
-              <Link className={_style.header__linkItem} to={link.link} key={idx}>
+              <Link className={_style.header__linkItem} to={link.link} key={idx} onClick={() => toggleMenu()}>
                 {link.text}
               </Link>
             ))

@@ -1,11 +1,18 @@
 import React from 'react'
+import 'scss/present/_present.scss'
+import Layout from 'components/layouts/layout';
+import SectionTitle from 'components/layouts/section-title';
+import Presentation from 'components/presentation/presentation';
 
-const Presentation = () => {
+const WhoWeArePage = () => {
   return (
-    <div>
-      Pressent Page
-    </div>
+    <Layout>
+      <div className="presents">
+        <SectionTitle title="Qui somme-nous ?" bgImage="image/common/1.jpg" bgColor="bg_prwkle" />
+        <Presentation />
+      </div>
+    </Layout>
   )
 }
 
-export default Presentation
+export default WhoWeArePage

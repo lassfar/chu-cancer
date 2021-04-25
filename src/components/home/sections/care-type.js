@@ -21,13 +21,18 @@ const CareType = () => {
           <div className={_style.careType__card} key={idx}>
             <div className={_style.careType__cardHeader}>
               <div className={_style.careType__cardIconContainer}>
-                <riIcon.RiMentalHealthFill className={_style.careType__cardIcon}>
-                </riIcon.RiMentalHealthFill>
+                <img className={_style.careType__cardIcon} src={item.imgUrl} alt={item.title} />
               </div>
             </div>
             <div className={_style.careType__cardBody}>
               <h1 className={_style.careType__cardTitle}>{item.title}</h1>
+              <p>{item.desc.substring(0, 50)+'...'}</p>
+              <button className="text_lemonade">Lire plus</button>
+            </div>
+            <div className={_style.careType__cardDetails}>
+              <h1 className={_style.careType__cardTitle}>{item.title}</h1>
               <p>{item.desc}</p>
+              <button className="text_lemonade">Lire plus</button>
             </div>
           </div>
         ))}

@@ -6,7 +6,7 @@ import * as _style from 'scss/home/jumbo.module.scss'
 
 const Jumbo = () => {
   
-  const bg = 'image/common/2.jpg' 
+  const bg = 'image/common/2.jpg'
   const bgStyle = {
     backgroundImage: `linear-gradient(#00000070, #00000090), url(${bg})`,
     backgroundSize: 'cover',

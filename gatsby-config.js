@@ -57,6 +57,13 @@ module.exports = {
         scss: path.join(__dirname, 'src/scss'),
       }
     },
+    {
+      resolve: `@ccalamos/gatsby-source-googlemaps-static`,
+      options: {
+        key: process.env.GOOGLE_MAPS_STATIC_API_KEY,
+        center: `33.5529929,7.640008099999999`,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

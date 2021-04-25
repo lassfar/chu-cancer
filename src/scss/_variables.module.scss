@@ -2,6 +2,7 @@ $prwkle: #B9B2D9; // periwinkle
 $lemonade: #EBA4BD; // lemonade
 $lemonade_transp: #eba4bd3a; // lemonade
 $hotpink: #F73879;
+$hotpink_transp: #F7387970;
 $salmon: #F6928E;
 $light: #FEF9F9;
 $light2: #fafafa;
@@ -17,6 +18,7 @@ $greylight: #707070;
 .bg_lemonade { background-color: $lemonade; }
 .bg_lemonade_transp { background-color: $lemonade_transp; }
 .bg_hotpink { background-color: $hotpink; }
+.bg_hotpink_transp { background-color: $hotpink_transp; }
 .bg_salmon { background-color: $salmon; }
 .bg_light { background-color: $light; }
 .bg_light2 { background-color: $light2; }
@@ -47,11 +49,13 @@ $greylight: #707070;
 .d_flex { display: flex; }
 .d_inline { display: inline; }
 .d_inline_block { display: inline-block; }
-.d_none { display: none; }
+.d_none { display: none !important; }
 .def_link { text-decoration: none; }
 .def_btn {
   border: none; outline: none;
   background-color: $transp;
+  padding: .6rem .8rem;
+  cursor: pointer;
 }
 .pointer { cursor: pointer; }
 .def_transition { transition: .3s all ease-in-out; }
@@ -91,6 +95,9 @@ $greylight: #707070;
   @include flexFlow($direct, $wrapping);
   justify-content: $justify;
   align-items: $align;
+}
+.hotpink_btn {
+  @extend .primary_btn;
 }
 .primary_btn {
   @include defaultBtn($hotpink, $white, 5rem);

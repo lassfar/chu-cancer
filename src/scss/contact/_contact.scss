@@ -1,0 +1,142 @@
+@import '../variables.module';
+
+.contacts {
+  position: relative;
+  // padding: 0rem 6rem;
+}
+
+.contact {
+  @include flexProps(row, nowrap, initial, initial);
+  width: 100%;
+}
+// CONTACT FORM
+.contactForm {
+  @include flexProps(column, nowrap, center, initial);
+  width: 50%;
+  padding: 4rem 6rem;
+  @extend .bg_transp, .text_hotpink;
+  *:focus {
+    border-bottom: .1rem solid $white;
+    &::placeholder {
+      transform: translateX(-100%);
+    }
+  }
+  *::placeholder {
+    @extend .text_hotpink;
+    @extend .def_transition;
+  }
+}
+.contactForm__title {
+  font-size: 3rem;
+  // margin-bottom: 1rem;
+  // @extend .text_hotpink;
+}
+.contactForm__label {
+  width: 100%;
+  font-weight: 500;
+  margin-bottom: .5rem;
+}
+.contactForm__input, .contactForm__textarea {
+  padding: .7rem;
+  @extend .bg_transp;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-bottom: .1rem solid $hotpink !important;
+}
+.contactForm__button {
+  @extend .def_btn, .hotpink_btn;
+  font-size: 1rem;
+  margin: .5rem 0;
+  width: fit-content;
+}
+.contactForm__aside {
+  padding: 2.5rem;
+  @extend .d_flex, .align_items_center;
+  width: 50%;
+  .contactForm__asideImg {
+    width: 100%;
+  }
+}
+
+
+// CONTACT CREDENTIALS
+.contactCreds {
+  @include flexProps(column, nowrap, center, center);
+  position: relative;
+  @extend .bg_black, .text_white;
+  width: 100%;
+  padding: 4rem 6rem;
+  border-bottom: .5rem solid $hotpink;
+}
+.contactCreds__title {
+  margin: 1rem 0;
+}
+.contactCreds__item {
+  @extend .d_flex, .align_items_center;
+  margin-bottom: 2rem
+}
+.contactCreds__itemText {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  a {
+    @extend .text_white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .contact {
+    flex-flow: row wrap;
+  }
+  .contactForm, .contactCreds {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  .contactAside {
+    width: 100%;
+  }
+  .contactForm__title {
+    font-size: 2rem;
+  }
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .contact {
+    flex-flow: row wrap;
+  }
+  .contactForm, .contactCreds {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+  .contactAside {
+    width: 100%;
+  }
+  .contactForm__title {
+    font-size: 2rem;
+  }
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+  .contactForm {
+    width: 60%;
+    padding: 4rem 2rem;
+  }
+  .contactAside {
+    width: 40%;
+  }
+  .contactCreds {
+    // width: 40%;
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}

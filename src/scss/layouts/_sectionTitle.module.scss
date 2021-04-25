@@ -1,0 +1,39 @@
+@import '../variables.module';
+
+.sectionTitle {
+  padding: 6rem 4rem 2rem 4rem;
+  @extend .text_white;
+}
+.sectionTitle__title {
+  position: relative;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+}
+
+
+/* SMALL */
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+  .sectionTitle {
+    padding: 2rem 2rem 1rem 2rem;
+  }
+  .sectionTitle__title {
+    font-size: 2rem;
+  }
+}
+/* MEDIUM */
+@media only screen and (max-width: 768px) and (min-width: 481px) {
+  .sectionTitle {
+    padding: 3rem 2rem 1rem 2rem;
+  }
+  .sectionTitle__title {
+    font-size: 2.5rem;
+  }
+}
+/* LARGE */
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+
+}
+/* X-LARGE */
+@media only screen and (max-width: 1200px) and (min-width: 1025px) {
+  
+}
