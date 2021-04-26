@@ -8,7 +8,7 @@ const WhoWeArePage = () => {
   return (
     <Layout>
       <div className="presents">
-        <SectionTitle title="Qui somme-nous ?" bgImage="image/common/1.jpg" bgColor="bg_prwkle" />
+        <SectionTitle title="Qui somme-nous ?" bgImage="image/common/1.jpg" bgColor="bg_black" />
         <Presentation />
       </div>
     </Layout>

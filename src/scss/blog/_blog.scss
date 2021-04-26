@@ -1,73 +1,78 @@
 @import '../variables.module';
 
-.presents {
-  position: relative;
+.news {
+
 }
-// component
-.present {
+
+.blog {
   @include flexProps(row, wrap, initial, initial);
 }
 
-.present__cover {
-  width: 100vw;
-  height: 25rem;
-  backdrop-filter: blur(1px) brightness(1.2) brightness(.5);
-  margin-bottom: 2rem;
-}
 // article
-.present__article {
+.blog__article {
   padding: 4rem;
   width: 60%;
 }
-.present__title {
+.blog__title {
   margin-bottom: 2rem;
   font-size: 2.5rem;
-  @extend .text_prwkle;
+  @extend .text_black;
 }
-.present__articleparagraph {
+.blog__articleparagraph {
   text-align: justify;  
   text-justify: inter-word;
   margin: 1.5rem 0;
 }
 
+
 // aside
-.present__aside {
+.blog__aside {
   padding: 4rem;
   width: 40%;
 }
-.present__asideImg {
+.blog__asideImg {
   width: 100%;
   height: 20rem;
   margin-bottom: 1rem;
-  border: .3rem solid $prwkle;
+  border: .3rem solid $black;
   @include objectFit(cover);
+}
+
+.blog__more {
+  @include flexProps(row, wrap, initial, initial);
+  padding: 4rem;
+}
+.blog__moreTitle {
+  font-size: 3rem;
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 
 /* SMALL */
 @media only screen and (max-width: 480px) and (min-width: 320px) {
- .present__article {
+ .blog__article {
    width: 100%;
  }
- .present__aside {
+ .blog__aside {
    width: 100%;
  }
 }
 /* MEDIUM */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
- .present__article {
+ .blog__article {
    width: 100%;
  }
- .present__aside {
+ .blog__aside {
    width: 100%;
  }
 }
 /* LARGE */
 @media only screen and (max-width: 1024px) and (min-width: 769px) {
- .present__article {
+ .blog__article {
    width: 55%;
  }
- .present__aside {
+ .blog__aside {
    width: 45%;
  }
 }

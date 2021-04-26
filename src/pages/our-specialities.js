@@ -8,7 +8,7 @@ const OurSpecialityPage = () => {
   return (
     <Layout>
       <div className={_style.spec}>
-        <SectionTitle title="Nos Spécialités" bgImage="image/common/5.jpg" bgColor="bg_lemonade" />
+        <SectionTitle title="Nos Spécialités" bgImage="image/common/5.jpg" bgColor="bg_black" />
         <OurSpeciality />
       </div>
     </Layout>
