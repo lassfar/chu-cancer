@@ -7,7 +7,7 @@ const ClogCard = ({blogItem}) => {
   return (
     <div className={_style.blog__card}>
       <div className={_style.blog__cardHeader}>
-        <img className={_style.blog__cardImg} src={`${blogItem.imgUrl}`} alt={blogItem.desc} />
+        <img className={_style.blog__cardImg} src={`${blogItem.imgUrl}`} alt={blogItem.desc.substring(0, 20)} />
       </div>
       <div className={_style.blog__cardBody}>
         <h3 className={_style.blog__cardTitle}>{blogItem.title}</h3>

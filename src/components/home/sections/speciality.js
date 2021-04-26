@@ -15,7 +15,7 @@ const Speciality = () => {
         {specialities.map((item, idx) => (
           <Link to={item.link} className={_style.speciality__card} key={idx}>
             <div className={_style.speciality__cardHeader}>
-              <img className={_style.speciality__cardImg} src={item.imgUrl} alt={item.desc} />
+              <img className={_style.speciality__cardImg} src={item.imgUrl} alt={item.desc.substring(0, 20)} />
             </div>
             <div className={_style.speciality__cardBody}>
               <div className={_style.speciality__cardTexts}>

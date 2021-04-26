@@ -2,6 +2,7 @@ import React from "react"
 import * as _var from 'scss/_variables.module.scss'
 import * as _style from 'scss/home/jumbo.module.scss'
 // import { StaticImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby';
 
 
 const Jumbo = () => {
@@ -25,9 +26,9 @@ const Jumbo = () => {
           Lorem Ipsum har været standard fyldtekst siden 1500-tallet,
           hvor en ukendt trykker sammensatte en tilfældig spalte for at trykke en bog til sammenligning af forskellige skrifttyper.
         </p>
-        <button className={`${_style.jumbo__btn} white_btn`}>
+        <Link to="/who-we-are" className={`${_style.jumbo__btn} white_btn`}>
           En savoir plus
-        </button>
+        </Link>
       </div>
       <div className={_style.jumbo__rightSection}>
         {/* <img className={_style.jumbo__rightImg} src={'image/cancer/4.png'} alt="chu cancer jumbo" /> */}
