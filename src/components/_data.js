@@ -6,13 +6,16 @@ import * as hiIcon from 'react-icons/hi'
 export const specialityList = [
   {
     title: 'Chirurgie Gynecologique',
-    desc: `La chirurgie gynécologique est une chirurgie qui s'intéresse aux organes génitaux de la femme : vulve, vagin, utérus et ses annexes (ovaires et trompes), seins.`,
-    imgUrl: 'image/common/8.jpg'
+    desc: `
+    La gynécologie se divise en plusieurs branches. L'obstétrique est la surveillance du déroulement de la grossesse et de l'accouchement. La gynécologie proprement dite a pour objet le diagnostic et le traitement des maladies de l'appareil génital et du sein (maladie de l'utérus, de l'ovaire, du sein, maladies sexuellement transmises), le dépistage des cancers gynécologiques par des frottis et des mammographies en collaboration avec des radiologues, la prise en charge du traitement de la stérilité, la régulation des naissances (contraception ou IVG) et le traitement des troubles de la ménopause.`,
+    imgUrl: 'image/common/8.jpg',
+    link: '/our-specialities'
   },
   {
     title: 'Chirurgie Oncologie',
-    desc: `L’oncologie chirurgicale est la branche de la chirurgie qui s’occupe de l’enlèvement des tumeurs ou des tissus cancéreux. La chirurgie est la plus ancienne méthode de traitement du cancer et la plus courante. Elle peut aussi être la méthode qui donne les meilleurs résultats pour traiter la maladie.`,
-    imgUrl: 'image/common/7.jpg'
+    desc: `Le Programme d’oncologie chirurgicale d’Action Cancer Ontario cherche à améliorer constamment la qualité et l’accessibilité des chirurgies contre le cancer en Ontario. Action Cancer Ontario collabore à la Stratégie sur les temps d’attente du gouvernement de l’Ontario. Dans le cadre du programme de l’Ontario visant à réduire les temps d’attente des personnes devant subir une chirurgie du cancer, le ministère de la Santé et de Soins de longue durée affiche sur son site Web des renseignements sur les temps d’attente dans tous les hôpitaux participants de la province. Pour de plus amples renseignements sur les temps d’attente et la Stratégie sur les temps d’attente.`,
+    imgUrl: 'image/common/7.jpg',
+    link: '/our-specialities'
   },
 ];
 

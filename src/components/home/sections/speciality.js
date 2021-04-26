@@ -4,6 +4,7 @@ import * as _var from 'scss/_variables.module.scss'
 import * as _style from 'scss/home/speciality.module.scss'
 import SectionLayout from 'components/layouts/section-layout'
 import {specialityList} from 'components/_data';
+import { Link } from 'gatsby';
 
 const Speciality = () => {
   const [specialities] = useState(specialityList)
@@ -12,7 +13,7 @@ const Speciality = () => {
     <SectionLayout title="Nos Spécialités" bg={_var.bg_white} colorTitle="text_lemonade" bgDivider={_var.bg_lemonade}>
       <div className={_style.speciality}>
         {specialities.map((item, idx) => (
-          <div className={_style.speciality__card} key={idx}>
+          <Link to={item.link} className={_style.speciality__card} key={idx}>
             <div className={_style.speciality__cardHeader}>
               <img className={_style.speciality__cardImg} src={item.imgUrl} alt={item.desc} />
             </div>
@@ -22,7 +23,7 @@ const Speciality = () => {
                 <p>{item.desc.substring(0, 50)+'...'}</p>
               </div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </SectionLayout>

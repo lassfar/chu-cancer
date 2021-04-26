@@ -37,7 +37,10 @@
 
 /* SMALL */
 @media only screen and (max-width: 480px) and (min-width: 320px) {
-  
+    
+  .section__divider {
+    margin: 0 0 .5rem;
+  }
   .section__dividerLine {
     width: 20%;
   }
@@ -51,6 +54,9 @@
 }
 /* MEDIUM */
 @media only screen and (max-width: 768px) and (min-width: 481px) {
+  .section__divider {
+    margin: 0 0 1rem;
+  }
   .section__dividerLine {
     width: 20%;
   }

@@ -34,7 +34,7 @@ const OurSpeciality = () => {
             className={`${_style.ourSpec__even} ${colors[idx]} text_white`}
             style={{order: (idx%2==0) ? 1 : 0}}
           >
-            <h1 className="mb-2">{ item.title }</h1>
+            <h1 className="" style={{marginBottom: "2rem"}}>{ item.title }</h1>
             <p>{ item.desc }</p>
           </div>
           
